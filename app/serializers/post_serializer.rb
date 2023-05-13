@@ -1,5 +1,5 @@
 class PostSerializer < ActiveModel::Serializer
-  attributes :title, :short_content
+  attributes :title, :short_content, :content
 
   def short_content
     "#{self.object.content[0..39]}..."
