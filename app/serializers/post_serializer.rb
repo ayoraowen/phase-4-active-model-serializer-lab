@@ -6,5 +6,6 @@ class PostSerializer < ActiveModel::Serializer
   end
 
   belongs_to :author
+  has_many :tags
 
 end
